@@ -1,1 +1,2 @@
-# Integrated_Decision_Making_and_Motion_Planning_in_Autonomous_Vehicles
+INTRODUCTION:
+Autonomous navigation enables vehicles to make independent driving decisions, drawing from various factors like sensor data, perception, path planning, localization, and vehicle control. While existing research tackles these aspects with advanced algorithms, many fail to recognize their interconnected nature, leading to inconsistencies and unpredictable behavior, especially when navigating complex scenarios like unsignalized intersections or multi-lane merging.
