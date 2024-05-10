@@ -1,0 +1,25 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- Define vehicle types -->
+    <vType id="car"
+           vClass="passenger" length="5" accel="2.0" decel="2.2"
+           sigma="0.5" maxSpeed="100" minGap="0" tau="0.5"/>
+
+    <!-- Define routes for vehicles -->
+    <route id="vehicle_route" edges="-gneE2 gneE3"/>
+    <route id="other_route1" edges="-gneE3 gneE2"/>
+    <route id="other_route2" edges="-gneE0 gneE3"/>
+    <route id="other_route3" edges="-gneE0 gneE2"/>
+
+    <!-- Define ego vehicle -->
+    <vehicle id="ego_vehicle" type="car" route="vehicle_route" depart="0" departLane="random" color="1,0,0" /> <!-- Red color for ego_vehicle -->
+
+    <!-- Other vehicles -->
+    <vehicle id="vehicle1" type="car" route="other_route1" depart="0" departLane="random" />
+    <vehicle id="vehicle6" type="car" route="vehicle_route" depart="0" departLane="random" />
+    <vehicle id="vehicle7" type="car" route="vehicle_route" depart="0" departLane="random" />
+    <vehicle id="vehicle2" type="car" route="other_route1" depart="0" departLane="random" />
+    <vehicle id="vehicle3" type="car" route="other_route2" depart="0" departLane="random" />
+    <vehicle id="vehicle4" type="car" route="other_route2" depart="0" departLane="random" />
+    <vehicle id="vehicle5" type="car" route="other_route3" depart="0" departLane="random" />
+
+</routes>

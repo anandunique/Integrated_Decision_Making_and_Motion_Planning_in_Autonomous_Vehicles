@@ -1,0 +1,6 @@
+<configuration>
+    <input>
+        <net-file value="dqn.net.xml"/>
+        <route-files value="dqn.rou.xml"/>
+    </input>
+</configuration>
